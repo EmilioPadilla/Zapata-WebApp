@@ -50,50 +50,17 @@ module.exports = {
 		],
 		'space-in-parens': 'error'
 	},
+	plugins: ['react', '@typescript-eslint'],
 	parserOptions: {
+		ecmaFeatures: {
+			jsx: true
+		},
+		ecmaVersion: 12,
 		sourceType: 'module'
+	},
+	settings: {
+		react: {
+			version: 'latest'
+		}
 	}
-	// overrides: [
-	// 	{
-	// 		files: ['*.ts'],
-	// 		extends: [
-	// 			'eslint:recommended',
-	// 			'plugin:@typescript-eslint/recommended',
-	// 			'plugin:@typescript-eslint/recommended-requiring-type-checking'
-	// 		],
-	// 		parser: '@typescript-eslint/parser',
-	// 		parserOptions: {
-	// 			project: 'tsconfig.json',
-	// 			sourceType: 'module',
-	// 			ecmaFeatures: {
-	// 				jsx: true
-	// 			},
-	// 			ecmaVersion: 12
-	// 		},
-	// 		plugins: ['@typescript-eslint', 'react'],
-	// 		rules: {
-	// 			'@typescript-eslint/no-floating-promises': ['off'],
-	// 			'@typescript-eslint/restrict-template-expressions': [
-	// 				'error',
-	// 				{
-	// 					allowNullish: true
-	// 				}
-	// 			]
-	// 		}
-	// 	},
-	// 	{
-	// 		files: ['*.js'],
-	// 		env: {
-	// 			es6: true
-	// 		},
-	// 		parserOptions: {
-	// 			ecmaVersion: 9
-	// 		},
-	// 		globals: {
-	// 			_: 'readonly',
-	// 			$: 'readonly',
-	// 			moment: 'readonly'
-	// 		}
-	// 	}
-	// ]
 };
