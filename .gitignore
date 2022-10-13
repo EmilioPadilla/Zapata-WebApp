@@ -13,7 +13,7 @@ node_modules/
 
 #build artifacts
 dist/
-built/
+build/
 reports/
 
 # OS generated files #
