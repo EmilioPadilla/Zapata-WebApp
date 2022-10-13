@@ -9,6 +9,7 @@ bin/
 node/
 node_modules/
 .next/
+.next/**
 
 
 #build artifacts
