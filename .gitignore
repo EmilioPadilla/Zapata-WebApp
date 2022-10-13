@@ -1,5 +1,4 @@
-.gitignore~
-..gitignore*
+
 .vscode
 target/
 bin/
@@ -9,6 +8,7 @@ bin/
 **/npm-debug*
 node/
 node_modules/
+.next/
 
 
 #build artifacts
