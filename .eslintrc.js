@@ -4,8 +4,11 @@ module.exports = {
 		node: true,
 		es2021: true
 	},
-	extends: ['plugin:react/recommended', 'prettier'],
+	extends: ['plugin:react/recommended', 'prettier', 'next/core-web-vitals'],
 	rules: {
+		'no-use-before-define': 'off',
+		'@typescript-eslint/no-use-before-define': ['error'],
+		'react/jsx-filename-extension': ['warn', {extensions: ['.tsx']}],
 		'comma-dangle': ['error', 'never'],
 		'eol-last': ['error', 'always'],
 		'function-call-argument-newline': ['error', 'consistent'],
@@ -53,7 +56,7 @@ module.exports = {
 	plugins: ['react', '@typescript-eslint'],
 	parserOptions: {
 		ecmaFeatures: {
-			jsx: true
+			tsx: true
 		},
 		ecmaVersion: 12,
 		sourceType: 'module'
