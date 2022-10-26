@@ -1,6 +1,6 @@
 {
   "bracketSameLine": false,
-  "bracketSpacing": false,
+  "bracketSpacing": true,
   "htmlWhitespaceSensitivity": "css",
   "printWidth": 120,
   "proseWrap": "preserve",

@@ -1,7 +1,7 @@
 import API from './api.service';
 
 const login = async (body: string) => {
-  return API.put('api/v1/entrance/login', {body: body})
+  return API.put('api/v1/entrance/login', { body: body })
     .then((res) => {
       if (res.status === 200) {
         return res.data;

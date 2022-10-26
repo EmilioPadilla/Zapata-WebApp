@@ -1,7 +1,6 @@
-import useSWR from 'swr';
-import {Spinner} from '@components/Spinner';
-import {FunctionComponent, useEffect, useState} from 'react';
-import {useRouter} from 'next/router';
+import { Spinner } from '@components/Spinner';
+import { FunctionComponent, useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 export const LoginPage: FunctionComponent = () => {
   const count = useState(0);

@@ -1,12 +1,11 @@
 /**
  * Corresponds to home page -> {{url}}/
  */
-import type {NextPage} from 'next';
-import {useRouter} from 'next/router';
+import type { NextPage } from 'next';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
-import useSWR from 'swr';
-import {Spinner} from '@components/Spinner';
-import {LoginPage} from '@components/Login';
+import { Spinner } from '@components/Spinner';
+import { LoginPage } from '@components/Login';
 
 const Login: NextPage = () => {
   const router = useRouter();

@@ -1,4 +1,4 @@
-import {FunctionComponent} from 'react';
+import { FunctionComponent } from 'react';
 import css from 'styled-jsx/css';
 
 export const styles = css.global`

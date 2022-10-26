@@ -1,11 +1,13 @@
 /**
  * Main React parent component
  */
-import type {AppProps} from 'next/app';
+import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import {GlobalStyles} from '@components/GlobalStyles';
+import ThemeProvider from '@mui/material/styles/ThemeProvider';
+import CssBaseline from '@mui/material/CssBaseline';
+import DefaultTheme from '@themes/DefaultTheme';
 
-function App({Component, pageProps}: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -16,9 +18,12 @@ function App({Component, pageProps}: AppProps) {
         <meta name="description" content="Página administrativa de Corporación Zapata en Zapata Connect" />
         <title>Zapata Connect</title>
       </Head>
-      s
-      <GlobalStyles />
-      <Component {...pageProps} />
+
+      <ThemeProvider theme={DefaultTheme}>
+        <CssBaseline enableColorScheme />
+        <Component {...pageProps} />
+      </ThemeProvider>
+
       {/*<UserProvider>
 				<AuthGuard>
 						<Component {...pageProps} />

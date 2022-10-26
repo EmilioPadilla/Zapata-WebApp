@@ -8,7 +8,7 @@ module.exports = {
   rules: {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-    'react/jsx-filename-extension': ['warn', {extensions: ['.tsx']}],
+    'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
     'comma-dangle': ['error', 'always-multiline'],
     'eol-last': ['error', 'always'],
     'function-call-argument-newline': ['error', 'consistent'],
@@ -31,7 +31,7 @@ module.exports = {
     'no-console': 'warn',
     'no-debugger': 'warn',
     'no-tabs': ['off'],
-    'object-curly-spacing': ['error', 'never'],
+    'object-curly-spacing': ['error', 'always'],
     // Commented out because it conflicts with Prettier
     //'operator-linebreak': ['error', 'after'],
     quotes: [
