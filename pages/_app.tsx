@@ -16,7 +16,7 @@ function App({Component, pageProps}: AppProps) {
 				<meta name="description" content="Página administrativa de Corporación Zapata en Zapata Connect" />
 				<title>Zapata Connect</title>
 			</Head>
-			s
+
 			<GlobalStyles />
 			<Component {...pageProps} />
 			{/*<UserProvider>
