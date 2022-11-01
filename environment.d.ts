@@ -1,12 +1,12 @@
 // eslint-disable-next-line
 declare global {
-	namespace NodeJS {
-		interface ProcessEnv {
-			NODE_ENV: 'development' | 'production';
-			PORT?: string;
-			VERSION: 'development' | 'production' | 'local';
-		}
-	}
+  namespace NodeJS {
+    interface ProcessEnv {
+      NODE_ENV: 'development' | 'production';
+      PORT?: string;
+      VERSION: 'development' | 'production' | 'local';
+    }
+  }
 }
 
 // If this file has no import/export statements (i.e. is a script)
