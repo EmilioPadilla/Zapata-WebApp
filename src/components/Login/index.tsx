@@ -6,22 +6,7 @@ import {makeStyles} from '@mui/styles';
 import {FunctionComponent, useEffect} from 'react';
 import {useRouter} from 'next/router';
 
-const useStyles = makeStyles((theme: any) => ({
-	form: {
-		position: 'relative',
-		display: 'block',
-		margin: '0 auto'
-	}
-}));
 export const LoginPage: FunctionComponent = () => {
-	const classes = useStyles();
-
-	// const {data: stories} = useSWR('stories', () => ProgramService.getStories());
-
-	useEffect(() => {});
-
-	// if () return <Spinner />;
-
 	return (
 		<>
 			<div className="container">
