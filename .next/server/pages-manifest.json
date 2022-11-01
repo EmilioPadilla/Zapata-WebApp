@@ -1,7 +1,13 @@
 {
   "/_app": "pages/_app.js",
+<<<<<<< HEAD
   "/404": "pages/404.html",
   "/": "pages/index.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js"
+=======
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
+>>>>>>> develop
 }
