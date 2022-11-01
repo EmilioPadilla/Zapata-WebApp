@@ -1,10 +1,20 @@
 import useSWR from 'swr';
+import Image from 'next/image';
 import {Spinner} from '@components/Spinner';
-import {FunctionComponent, useEffect, useState} from 'react';
+import {Button, Input} from '@mui/material';
+import {makeStyles} from '@mui/styles';
+import {FunctionComponent, useEffect} from 'react';
 import {useRouter} from 'next/router';
 
+const useStyles = makeStyles((theme: any) => ({
+	form: {
+		position: 'relative',
+		display: 'block',
+		margin: '0 auto'
+	}
+}));
 export const LoginPage: FunctionComponent = () => {
-	const count = useState(0);
+	const classes = useStyles();
 
 	// const {data: stories} = useSWR('stories', () => ProgramService.getStories());
 
@@ -16,33 +26,42 @@ export const LoginPage: FunctionComponent = () => {
 		<>
 			<div className="container">
 				<div className="header">
-					<div className="header-container">
-						{/* // eslint-disable-line */}
-						<img src="/assets/zapata.png" alt="logo-zapata" />
+					<div className="">
+						<img src="/assets/zapata.png" alt="logo-zapata" className="logo-img" />
 					</div>
 					<br />
 				</div>
 				<div className="field-container">
-					<input type="textbox" className=""></input>
+					<Input type="text" className="center-inputs" placeholder="Usuario"></Input>
 					<br />
-					<input type="textbox"></input>
+					<Input type="text" className="center-inputs" placeholder="Contraseña"></Input>
 					<br />
-					<button>Iniciar sesión</button>
+					<Button className="center-inputs" variant="contained">
+						Iniciar sesión
+					</Button>
 				</div>
 			</div>
 			<style jsx>{`
 				.container {
-					background-image: url('/assets/mcqueen.png');
+					margin-top: 20%;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					display: flex;
+					flex-wrap: wrap;
 				}
-				.header-container {
-					padding-left: 32px;
-					padding-top: 50px;
-					width: 30%;
-					height: 30%;
+				.logo-img {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 50%;
 				}
 				.field-container {
+					margin-left: auto;
+					margin-right: auto;
+					width: 40%;
 					display: flex;
-					justify-content: center;
+					flex-direction: column;
 				}
 				h2 {
 					font-style: normal;
